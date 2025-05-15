@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TimezoneComponent } from './timezone/timezone.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [TimezoneComponent],
+  template: `<app-timezone></app-timezone>`,
 })
-export class AppComponent {
-  title = 'Timezone';
-}
+export class AppComponent {}

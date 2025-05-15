@@ -1,0 +1,13 @@
+<h2>Real-Time Timezone Converter</h2>
+
+<div>
+  <label for="timezone">Select Timezone:</label>
+  <select id="timezone" [(ngModel)]="selectedTimezone">
+    <option *ngFor="let timezone of timezones" [value]="timezone">
+      {{ timezone }}
+    </option>
+  </select>
+</div>
+
+<p><strong>Local Time:</strong> {{ localTime }}</p>
+<p><strong>Selected Timezone Time:</strong> {{ selectedTime }}</p>
